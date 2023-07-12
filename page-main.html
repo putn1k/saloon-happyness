@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="fonts/raleway-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/tenorsans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css">
+  <link rel="stylesheet" href="style/main.css">
+  <title>Page title</title>
+</head>
+
+<body class="indent-reset site">
+  <div aria-hidden="true" id="site-top"></div>
+  <div class="site__container">
+    <header class="site__header header">
+      <div class="header__main">
+        <div class="container header__wrapper">
+          <div class="header__logo">
+            <a href="index.html" aria-label="Перейти на головну">
+              <picture>
+                <img class="header__logo-img" src="img/logo.svg" width="135" height="49" alt="Логотип">
+              </picture>
+            </a>
+          </div>
+          <div class="header__burger">
+            <button class="just-burger" type="button" aria-label="menu" id="just-burger">
+              <span class="just-burger__line just-burger__line--top"></span>
+              <span class="just-burger__line just-burger__line--middle"></span>
+              <span class="just-burger__line just-burger__line--bottom"></span>
+            </button>
+          </div>
+          <div class="header__desktop">
+            <nav class="header-nav">
+              <ul class="list-reset header-nav__menu">
+                <li>
+                  <a href="page-services.html">Послуги</a>
+                </li>
+                <li>
+                  <a href="page-price.html">Ціни</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-promotions">Акції</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-about">Інформація</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-contacts">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-geo">
+              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-city-modal">Київ</button>
+            </div>
+            <div class="header-contacts">
+              <div class="header-contacts__phone">
+                <a href="tel:+380980970345">
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span>+380 98 097 03 45</span>
+                </a>
+              </div>
+              <button class="btn-reset btn header-contacts__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатися на процедуру</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-modal" aria-hidden="true">
+        <div class="header-modal__content">
+          <div class="container">
+            <nav class="header-nav">
+              <ul class="list-reset header-nav__menu">
+                <li>
+                  <a href="page-services.html">Послуги</a>
+                </li>
+                <li>
+                  <a href="page-price.html">Ціни</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-promotions">Акції</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-about">Інформація</a>
+                </li>
+                <li>
+                  <a href="page-main.html#main-contacts">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-geo">
+              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-city-modal">Київ</button>
+            </div>
+            <div class="header-contacts">
+              <div class="header-contacts__phone">
+                <a href="tel:+380980970345">
+                  <svg width="18" height="18" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  <span>+380 98 097 03 45</span>
+                </a>
+              </div>
+              <button class="btn-reset btn header-contacts__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатися на процедуру</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="site__content">
+      <main>
+        <section class="main-hero">
+          <div class="container main-hero__container">
+            <h1 class="visually-hidden">Cалон краси Щастя</h1>
+            <p class="indent-reset title main-hero__title">Який вид <span>епiляцiї</span> підійде саме для Вас?</p>
+            <p class="indent-reset main-hero__subtitle">Наші майстри готові допомогти Вам зробити вибір, враховуючи тип Вашої шкіри та волосся</p>
+            <button class="btn-reset btn btn--grad main-hero__btn" type="button" data-hystmodal="#free-consult-modal">Безкоштовна консультація</button>
+          </div>
+        </section>
+        <section class="main-services" id="main-services">
+          <div class="container">
+            <h2 class="indent-reset title title--h2 main-services__title">Послуги</h2>
+            <p class="indent-reset title title--h3 main-services__subtitle">Усі методи епіляції в одному салоні</p>
+            <ul class="list-reset main-services__list">
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Електроепіляція</h3>
+                <img class="services-card__img" src="img/services/service-1.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-electroepilation.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Лазерна епіляція</h3>
+                <img class="services-card__img" src="img/services/service-2.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-laserepilation.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Воскова депіляція</h3>
+                <img class="services-card__img" src="img/services/service-3.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-waxepilation.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Шугаринг</h3>
+                <img class="services-card__img" src="img/services/service-4.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-sugaring.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Фотоепіляція</h3>
+                <img class="services-card__img" src="img/services/service-5.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-photoepilation.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Солярій</h3>
+                <img class="services-card__img" src="img/services/service-6.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-solar.html">Детальніше</a>
+                </div>
+              </li>
+              <li class="main-services__item services-card">
+                <h3 class="indent-reset title title--h3 services-card__title">Косметологія</h3>
+                <img class="services-card__img" src="img/services/service-7.png" alt="">
+                <div class="services-card__overlay">
+                  <a class="services-card__link" href="page-cosmetology.html">Детальніше</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-promotions" id="main-promotions">
+          <div class="container">
+            <h2 class="indent-reset title title--h2 main-promotions__title">Акції та пропозиції</h2>
+            <div class="main-promotions__slider slider">
+              <div class="main-promotions__nav slider__nav">
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="prev slide" data-to-slide="prev">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="next slide" data-to-slide="next">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="main-promotions__slider-container slider__container">
+                <ul class="list-reset main-promotions__list swiper-wrapper slider__wrapper">
+                  <li class="main-promotions__item promotions-card swiper-slide">
+                    <h3 class="indent-reset title title--h3 promotions-card__title">Абонемент на електроепіляцію зекономією від 5% до 20%</h3>
+                    <div class="promotions-card__descr">
+                      <p>Купуйте відразу кілька годин процедури за нижчою ціною, ніж похвилинно</p>
+                    </div>
+                    <button class="btn-reset btn btn--grad promotions-card__btn" type="button" data-hystmodal-promo="#promotion-modal" data-promo-title="Абонемент на електроепіляцію">Замовити абонемент</button>
+                    <img class="promotions-card__img" src="img/action/action-happy.png" aria-hidden="true" alt="">
+                  </li>
+                  <li class="main-promotions__item promotions-card swiper-slide">
+                    <h3 class="indent-reset title title--h3 promotions-card__title">Знижка до Дня народження! з кономією від 5% до 20% </h3>
+                    <div class="promotions-card__descr">
+                      <p><b>Відсоток знижки дорівнює вашому віку</b></p>
+                      <p>Знижка діє за умови, що ви були у нас мінімум 1 раз</p>
+                    </div>
+                    <button class="btn-reset btn btn--grad promotions-card__btn" type="button" data-hystmodal-promo="#promotion-modal" data-promo-title="Знижка до Дня народження!">Скористатися знижкою</button>
+                    <img class="promotions-card__img" src="img/action/action-bd.png" aria-hidden="true" alt="">
+                  </li>
+                  <li class="main-promotions__item promotions-card swiper-slide">
+                    <h3 class="indent-reset title title--h3 promotions-card__title">Пробна процедура електроепіляціївсього за 100 грн!
+                    </h3>
+                    <div class="promotions-card__descr">
+                      <p>До вартості включений одноразовий зонд, 15 хвилин процедури і подарунковий дглядовий набір</p>
+                    </div>
+                    <button class="btn-reset btn btn--grad promotions-card__btn" type="button" data-hystmodal-promo="#promotion-modal" data-promo-title="Пробна процедура електроепіляції">Спробувати</button>
+                    <img class="promotions-card__img" src="img/action/action-proc.png" aria-hidden="true" alt="">
+                  </li>
+                  <li class="main-promotions__item promotions-card swiper-slide">
+                    <h3 class="indent-reset title title--h3 promotions-card__title">Подарунковий сертифікат</h3>
+                    <div class="promotions-card__descr">
+                      <p>Ви можете придбати сертифікат на будь-яку суму. Для цього просто залиште запит, щоб нашменеджер зміг з Вами зв’язатися та обговорити деталі</p>
+                    </div>
+                    <button class="btn-reset btn btn--grad promotions-card__btn" type="button" data-hystmodal-promo="#promotion-modal" data-promo-title="Подарунковий сертифікат">Залишити заявку</button>
+                    <img class="promotions-card__img" src="img/action/action-cert.png" aria-hidden="true" alt="">
+                  </li>
+                  <li class="main-promotions__item promotions-card swiper-slide">
+                    <h3 class="indent-reset title title--h3 promotions-card__title">Перший сеанс в солярії в подарунок!</h3>
+                    <div class="promotions-card__descr">
+                      <p>При купівлі абонемента в солярій на 50 хвилин, ми даруємо Вам безплатний перший сеанс</p>
+                    </div>
+                    <button class="btn-reset btn btn--grad promotions-card__btn" type="button" data-hystmodal-promo="#promotion-modal" data-promo-title="Перший сеанс в солярії в подарунок!">Замовити абонемент</button>
+                    <img class="promotions-card__img" src="img/action/action-solar.png" aria-hidden="true" alt="">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-about" id="main-about">
+          <div class="container">
+            <header class="main-about__header">
+              <h2 class="indent-reset title title--h2 main-about__title"><span>15 років</span> позбавляємо наших клієнтів від
+                волосків
+              </h2>
+              <div class="main-about__descr">
+                <p>Дякуємо Вам за інтерес до нашої сторінки та ласкаво просимо у світ гладкої шкіри «Щастя»!</p>
+                <p>Ви тут для того, щоб розібратися у всіх тонкощах епіляції й депіляції та обрати свій метод? Ми із задоволенням подаруємо Вам світ гладкості та Щастя і познайомимо з нашим головним і найтоповішим методом, який озволяє позбавитися від небажаного волосся назавжди — електроепіляцією!</p>
+              </div>
+            </header>
+            <div class="main-about__offer main-offer">
+              <div class="main-offer__wrapper">
+                <h3 class="indent-reset title title--h3 main-offer__title">Ми можемо запропонувати Вам:</h3>
+                <ul class="indent-reset main-offer__list">
+                  <li>Лазерну епіляцію</li>
+                  <li>Фотоепіляцію</li>
+                  <li>Шугаринг</li>
+                  <li>Воскову депіляцію</li>
+                </ul>
+                <div class="main-offer__descr">
+                  <p>Вузька спеціалізація та наявність в арсеналі всіх методів епіляції гарантують Вам максимальноповний комплекс процедур і найкращий результат!</p>
+                  <p>Щастя @epil_city — Ваш експерт в абсолютній гладкості.</p>
+                  <p>Зробити правильний вибір методу епіляції — це основа успішного курсу процедур. Довірте це нашим професіоналам і готуйтеся до неминучої гладкості.</p>
+                </div>
+                <a class="btn btn--grad main-offer__link" href="page-services.html">Переглянути всі послуги</a>
+              </div>
+            </div>
+            <footer class="main-about__footer">
+              <p class="indent-reset main-about__footer-text"><span class="title title--h2">4 філіали</span>відкриті в Києві, Миколаєві та Херсоні</p>
+              <p class="indent-reset main-about__footer-text"><span class="title title--h2">і найважливіше</span>Тільки в Щасті ми можемо підібрати індивідуальний метод епіляції, який відповідний до кожної Вашої зони, кожного волоска! </p>
+            </footer>
+          </div>
+        </section>
+        <section class="main-teams" data-tabs="team" id="main-teams">
+          <div class="container">
+            <h2 class="indent-reset title title--h2 main-teams__title">Наша команда</h2>
+            <!-- tabs nav start -->
+            <div class="main-teams__select tabs-nav-select" data-dd="select">
+              <div class="tabs-nav-select__wrapper">
+                <button class="btn-reset tabs-nav-select__trigger" type="button" data-dd="trigger">Виберіть вулицю</button>
+                <ul class="list-reset tabs-nav-select__list" data-tabs="nav">
+                  <li class="tabs-nav-select__item">
+                    <button class="btn-reset tabs-nav-select__item-btn" type="button" data-tabs="btn" data-dd="item">м.Київ, вул. Б. Хмельницкого</button>
+                  </li>
+                  <li class="tabs-nav-select__item">
+                    <button class="btn-reset tabs-nav-select__item-btn" type="button" data-tabs="btn" data-dd="item">м.Київ, вул. Чавдар</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- tabs nav end -->
+            <p class="indent-reset title title--h3 main-teams__note">Сертифікати мають усі наші майстри, бо нам важлива Ваша безпека</p>
+            <!-- team | panel | slider -->
+            <div class="saloon-team slider" data-tabs="panel">
+              <div class="saloon-team__nav slider__nav">
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="prev slide" data-to-slide="prev">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="next slide" data-to-slide="next">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="saloon-team__slider slider__container">
+                <ul class="list-reset slider__wrapper swiper-wrapper">
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                </ul>
+              </div>
+            </div>
+            <!-- team | panel | slider end -->
+            <!-- team | panel | slider -->
+            <div class="saloon-team slider" data-tabs="panel">
+              <div class="saloon-team__nav slider__nav">
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="prev slide" data-to-slide="prev">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="next slide" data-to-slide="next">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="saloon-team__slider slider__container">
+                <ul class="list-reset slider__wrapper swiper-wrapper">
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                  <!-- person start -->
+                  <li class="person-card swiper-slide">
+                    <div class="person-card__meta">
+                      <img class="person-card__photo" src="img/persons/dar.png" alt="">
+                      <span class="person-card__post">Власник, провідний фахівець</span>
+                    </div>
+                    <h3 class="indent-reset title title--h3 person-card__name">Блінцова Дарина</h3>
+                    <button class="btn-reset person-card__cert-action" type="button" data-hystmodal="#certificate-id">Переглянути сертифікат</button>
+                    <button class="btn-reset person-card__appoint-action" type="button" data-hystmodal-rec="#record-to-spec-modal" data-spec="Блінцова Дарина">Записатись до Дарини</button>
+                  </li>
+                  <!-- person end -->
+                </ul>
+              </div>
+            </div>
+            <!-- team | panel | slider end -->
+          </div>
+        </section>
+        <section class="main-awards">
+          <div class="container">
+            <h2 class="indent-reset title title--h2 main-awards__title">Нагороди</h2>
+            <div class="slider">
+              <div class="main-awards__nav slider__nav">
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="prev slide" data-to-slide="prev">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="btn-reset btn btn--grad slider__nav-btn" aria-label="next slide" data-to-slide="next">
+                  <svg class="slider__nav-icon" width="10" height="10" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="main-awards__slider-container slider__container">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="main-award swiper-slide">
+                    <div class="main-award__content">
+                      <h3 class="indent-reset title main-award__title">"Знак якості"</h3>
+                      <div class="main-award__descr">
+                        <p>Наш салон "Щастя" (колишня назва "Епіл-Сіті") в 2021 році отримав "Знак якості" і увійшов до ТОП галузевого рейтингу за результатами аналізу фінансово-економічних показників. Результати рейтингу складалися на підставі проведення соціологічних опитувань громадян у різних регіонах країни, онлайн-голосувань у соціальних мережах тощо.</p>
+                        <p><b>Ось що про нас говорить Всеукраїнський рейтинг якості товарів і послуг "Знак якості":</b></p>
+                        <p>"Епіл-Сіті" виконують всі види сучасної епіляції максимально комфортно, якісно і безболісно. Застосовувані апарати - це кращі пристрої від світових лідерів в галузі.</p>
+                        <p>Майстри салонів справжні професіонали: володіють&nbsp;більш ніж двадцятьма мануальними техніками епіляції і депіляції, і тому можуть підібрати методику, максимально вигідну Вам, щоб досягти найкращого результату.</p>
+                        <p>Власник мережі Дарини Блінцова - майстер з величезним досвідом роботи, переможниця чемпіонату України з епіляції та бікіні-дизайну 2015 р., головний технолог з електроепіляції в Україні та СНД, член Американської асоціації електрологів, суддя міжнародних чемпіонатів з електроепіляції. Навчання у Дарини щорічно проходять більше сотні майстрів з різних регіонів України та інших держав.</p>
+                        <p>Вітаємо! Маємо честь вручити керівнику Дарині Блінцовій та найкращому колективу нагороди: почесний Кубок та Диплом "Знак якості", а також маркувальний знак "Гарантія якості", як нагороду за якість!</p>
+                      </div>
+                    </div>
+                    <picture>
+                      <img class="swiper-lazy main-award__img" src="img/award/award.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="main-award swiper-slide">
+                    <div class="main-award__content">
+                      <h3 class="indent-reset title main-award__title">"Знак якості"</h3>
+                      <div class="main-award__descr">
+                        <p>Наш салон "Щастя" (колишня назва "Епіл-Сіті") в 2021 році отримав "Знак якості" і увійшов до ТОП галузевого рейтингу за результатами аналізу фінансово-економічних показників. Результати рейтингу складалися на підставі проведення соціологічних опитувань громадян у різних регіонах країни, онлайн-голосувань у соціальних мережах тощо.</p>
+                        <p><b>Ось що про нас говорить Всеукраїнський рейтинг якості товарів і послуг "Знак якості":</b></p>
+                        <p>"Епіл-Сіті" виконують всі види сучасної епіляції максимально комфортно, якісно і безболісно. Застосовувані апарати - це кращі пристрої від світових лідерів в галузі.</p>
+                        <p>Майстри салонів справжні професіонали: володіють&nbsp;більш ніж двадцятьма мануальними техніками епіляції і депіляції, і тому можуть підібрати методику, максимально вигідну Вам, щоб досягти найкращого результату.</p>
+                        <p>Власник мережі Дарини Блінцова - майстер з величезним досвідом роботи, переможниця чемпіонату України з епіляції та бікіні-дизайну 2015 р., головний технолог з електроепіляції в Україні та СНД, член Американської асоціації електрологів, суддя міжнародних чемпіонатів з електроепіляції. Навчання у Дарини щорічно проходять більше сотні майстрів з різних регіонів України та інших держав.</p>
+                        <p>Вітаємо! Маємо честь вручити керівнику Дарині Блінцовій та найкращому колективу нагороди: почесний Кубок та Диплом "Знак якості", а також маркувальний знак "Гарантія якості", як нагороду за якість!</p>
+                      </div>
+                    </div>
+                    <picture>
+                      <img class="swiper-lazy main-award__img" src="img/award/award.jpg" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main-testimonials" id="main-testimonials_anc">
+          <div class="container">
+            <h2 class="indent-reset title title--h2 main-testimonials__title">Відгуки</h2>
+            <p class="indent-reset main-testimonials__subtitle">Більше відгуків збережено в «актуальних» в нашому <a href="#">Інстаграмі</a></p>
+            <ul class="list-reset main-testimonials__list">
+              <li class="testimonial-card">
+                <header class="testimonial-card__header">
+                  <span class="title title--h3 testimonial-card__adress">м. Київ, вул. Б.Хмельницького, 29/2</span>
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__rate">4.9</span>
+                    <span class="testimonial-card__stars" style="width: calc(28px * 5.0);" aria-hidden="true"></span>
+                  </div>
+                  <a href="#" class="testimonial-card__link">Читати всі відгуки</a>
+                </header>
+                <div class="testimonial-card__content">
+                  <h3 class="indent-reset testimonial-card__title">Заголовок отзыва!</h3>
+                  <div class="testimonial-card__text">
+                    <p>Текст отзыва Оставьте свой номер и мы ответим на все интересующие Вас вопросы Текст отзыва Оставьте свой
+                      номер и мы.</p>
+                  </div>
+                </div>
+                <footer class="testimonial-card__footer">
+                  <img class="testimonial-card__author-photo" width="45" height="45" src="img/testimonials/author.jpg" alt="">
+                  <span class="testimonial-card__author-name">Елена</span>
+                  <time class="testimonial-card__date" datetime="2021-01-21">21.01.2021</time>
+                </footer>
+              </li>
+              <li class="testimonial-card">
+                <header class="testimonial-card__header">
+                  <span class="title title--h3 testimonial-card__adress">м. Херсон, вул. Потьомкінська, 65</span>
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__rate">4.9</span>
+                    <span class="testimonial-card__stars" style="width: calc(28px * 5.0);" aria-hidden="true"></span>
+                  </div>
+                  <a href="#" class="testimonial-card__link">Читати всі відгуки</a>
+                </header>
+                <div class="testimonial-card__content">
+                  <h3 class="indent-reset testimonial-card__title">Заголовок отзыва!</h3>
+                  <div class="testimonial-card__text">
+                    <p>Текст отзыва Оставьте свой номер и мы ответим на все интересующие Вас вопросы Текст отзыва Оставьте свой
+                      номер и мы.</p>
+                    <p>Текст отзыва Оставьте свой номер и мы ответим на все интересующие Вас вопросы Текст отзыва Оставьте свой
+                      номер и мы.</p>
+                  </div>
+                </div>
+                <footer class="testimonial-card__footer">
+                  <img class="testimonial-card__author-photo" width="45" height="45" src="img/testimonials/author.jpg" alt="">
+                  <span class="testimonial-card__author-name">Елена</span>
+                  <time class="testimonial-card__date" datetime="2021-01-21">21.01.2021</time>
+                </footer>
+              </li>
+              <li class="testimonial-card">
+                <header class="testimonial-card__header">
+                  <span class="title title--h3 testimonial-card__adress">м. Київ, вул. Єлизавети Чавдар, 13</span>
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__rate">4.9</span>
+                    <span class="testimonial-card__stars" style="width: calc(28px * 5.0);" aria-hidden="true"></span>
+                  </div>
+                  <a href="#" class="testimonial-card__link">Читати всі відгуки</a>
+                </header>
+                <div class="testimonial-card__content">
+                  <h3 class="indent-reset testimonial-card__title">Заголовок отзыва!</h3>
+                  <div class="testimonial-card__text">
+                    <p>Текст отзыва Оставьте свой номер и мы ответим на все интересующие Вас вопросы Текст отзыва Оставьте свой
+                      номер и мы.</p>
+                  </div>
+                </div>
+                <footer class="testimonial-card__footer">
+                  <img class="testimonial-card__author-photo" width="45" height="45" src="img/testimonials/author.jpg" alt="">
+                  <span class="testimonial-card__author-name">Елена</span>
+                  <time class="testimonial-card__date" datetime="2021-01-21">21.01.2021</time>
+                </footer>
+              </li>
+              <li class="testimonial-card">
+                <header class="testimonial-card__header">
+                  <span class="title title--h3 testimonial-card__adress">м.Миколаїв, пр. Центральний, 89</span>
+                  <div class="testimonial-card__rating">
+                    <span class="testimonial-card__rate">4.9</span>
+                    <span class="testimonial-card__stars" style="width: calc(28px * 5.0);" aria-hidden="true"></span>
+                  </div>
+                  <a href="#" class="testimonial-card__link">Читати всі відгуки</a>
+                </header>
+                <div class="testimonial-card__content">
+                  <h3 class="indent-reset testimonial-card__title">Заголовок отзыва!</h3>
+                  <div class="testimonial-card__text">
+                    <p>Текст отзыва Оставьте свой номер и мы ответим на все интересующие Вас вопросы Текст отзыва Оставьте свой
+                      номер и мы.</p>
+                  </div>
+                </div>
+                <footer class="testimonial-card__footer">
+                  <img class="testimonial-card__author-photo" width="45" height="45" src="img/testimonials/author.jpg" alt="">
+                  <span class="testimonial-card__author-name">Елена</span>
+                  <time class="testimonial-card__date" datetime="2021-01-21">21.01.2021</time>
+                </footer>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-callback" id="main-callback">
+          <div class="container">
+            <div class="callback">
+              <h2 class="indent-reset title title--h2 callback__title">Хочете отримати <span>консультацію?</span></h2>
+              <p class="indent-reset callback__text">Залиште свій номер і ми відповімо на всі питання в зручний для вас час</p>
+              <form class="form callback__form" method="post" id="callback-form" data-validate>
+                <input type="hidden" name="Форма" value="Хочете отримати консультацію">
+                <div>
+                  <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+                </div>
+                <div>
+                  <input class="form__input" type="tel" name="Номер&nbsp;телефону" placeholder="Номер телефону" data-validate="phone" required>
+                </div>
+                <div class="cb-form-select" data-dd="select">
+                  <div class="cb-form-select__wrapper">
+                    <button class="btn-reset cb-form-select__trigger" type="button" data-dd="trigger">Коли зателефонувати?</button>
+                    <ul class="list-reset cb-form-select__list">
+                      <li class="cb-form-select__item">
+                        <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли&nbsp;зателефонувати?" id="callbackTime01" value="9:00 - 12:00" checked>
+                        <label class="cb-form-select__item-btn" for="callbackTime01" data-dd="item">9:00 - 12:00</label>
+                      </li>
+                      <li class="cb-form-select__item">
+                        <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли&nbsp;зателефонувати?" id="callbackTime02" value="12:00 - 15:00">
+                        <label class="cb-form-select__item-btn" for="callbackTime02" data-dd="item">12:00 - 15:00</label>
+                      </li>
+                      <li class="cb-form-select__item">
+                        <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли&nbsp;зателефонувати?" id="callbackTime03" value="15:00 - 18:00">
+                        <label class="cb-form-select__item-btn" for="callbackTime03" data-dd="item">15:00 - 18:00</label>
+                      </li>
+                      <li class="cb-form-select__item">
+                        <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли&nbsp;зателефонувати?" id="callbackTime04" value="18:00 - 20:00">
+                        <label class="cb-form-select__item-btn" for="callbackTime04" data-dd="item">18:00 - 20:00</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <button class="btn-reset btn btn--grad callback__submit" type="submit">Відправити</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="main-contacts" data-tabs="contacts" id="main-contacts">
+          <div class="container">
+            <header class="main-contacts__top">
+              <div class="main-contacts__heading">
+                <h2 class="indent-reset title title--h2 main-contacts__title">Контакти</h2>
+              </div>
+              <ul class="list-reset main-contacts__info-list">
+                <li class="main-contacts__info-item">
+                  <span class="main-contacts__item-title">Режим роботи:</span>
+                  <b><span>Пн-Сб 09:00 - 20:00</span></b>
+                </li>
+                <li class="main-contacts__info-item">
+                  <span class="main-contacts__item-title">Електронна почта:</span>
+                  <b><a href="mailto:info@epil-city.com.ua">info@epil-city.com.ua</a></b>
+                </li>
+                <li class="main-contacts__info-item">
+                  <a class="main-contacts__icon-link" href="#">Наш Instagram
+                    <svg width="23" height="23" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="main-contacts__info-item">
+                  <a class="main-contacts__icon-link" href="#">Слідкуйте за нами у TikTok
+                    <svg width="23" height="23" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-tiktok"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="main-contacts__select tabs-nav-select" data-dd="select">
+                <div class="tabs-nav-select__wrapper">
+                  <button class="btn-reset tabs-nav-select__trigger" type="button" data-dd="trigger">Виберіть вулицю</button>
+                  <ul class="list-reset tabs-nav-select__list" data-tabs="nav" data-selector="list">
+                    <li class="tabs-nav-select__item">
+                      <button class="btn-reset tabs-nav-select__item-btn" type="button" data-tabs="btn" data-dd="item">м.Київ, вул. Б. Хмельницкого</button>
+                    </li>
+                    <li class="tabs-nav-select__item">
+                      <button class="btn-reset tabs-nav-select__item-btn" type="button" data-tabs="btn" data-dd="item">м.Київ, вул. Чавдар</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </header>
+
+            <div data-tabs="panel">
+              <div class="main-contacts__panel">
+                <div class="contacts-card">
+                  <h3 class="indent-reset title title--h3 contacts-card__title">вул. Б. Хмельницького, 29/2 <span>(вхід через
+                      арку
+                      з вул. Леонтовича)</span></h3>
+                  <ul class="list-reset contacts-card__metro">
+                    <li>від м.Золоті Ворота (5 хв.)</li>
+                    <li>від м.Університет (6 хв.)</li>
+                  </ul>
+                  <ul class="list-reset contacts-card__phones">
+                    <li>
+                      <a href="#">
+                        <svg width="17" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +380 66 580-20-34
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg width="17" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        +380 98 097-03-45
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="btn-reset btn btn--grad contacts-card__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+                </div>
+                <iframe class="main-contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.377517821687!2d30.509429566684926!3d50.44566334589035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce58795bd2c5%3A0xef576befc9cc0576!2z0YPQuy4g0JHQvtCz0LTQsNC90LAg0KXQvNC10LvRjNC90LjRhtC60L7Qs9C-LCAyOS8yLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sru!4v1644323990592!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+            <div data-tabs="panel">
+              <div class="main-contacts__panel">
+                <div class="contacts-card">
+                  <h3 class="indent-reset title title--h3 contacts-card__title">вул. Єлизавети Чавдар, 13</h3>
+                  <ul class="list-reset contacts-card__metro">
+                    <li>м. Осокорки</li>
+                  </ul>
+                  <ul class="list-reset contacts-card__phones">
+                    <li>
+                      <a href="#">
+                        <svg width="17" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        380 66 270-28-70
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <svg width="17" height="17" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-phone"></use>
+                        </svg>
+                        380 98 750-95-93
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="btn-reset btn btn--grad contacts-card__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+                </div>
+                <iframe class="main-contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.377517821687!2d30.509429566684926!3d50.44566334589035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce58795bd2c5%3A0xef576befc9cc0576!2z0YPQuy4g0JHQvtCz0LTQsNC90LAg0KXQvNC10LvRjNC90LjRhtC60L7Qs9C-LCAyOS8yLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sru!4v1644323990592!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="site__footer footer">
+      <div class="container footer__container">
+        <div class="footer-top">
+          <div class="footer-top__logo">
+            <a href="index.html" aria-label="Перейти на головну">
+              <picture>
+                <img class="footer-top__logo-icon" src="img/logo-light.svg" width="135" height="49" alt="Логотип">
+              </picture>
+            </a>
+          </div>
+          <div class="footer-top__cb">
+            <div class="footer-cb">
+              <div class="footer-cb__btn-wrapper">
+                <button class="btn-reset btn btn--light footer-cb__btn-contacts" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+              </div>
+              <div class="footer-cb__rules">
+                <a class="footer-cb__policy" href="#">Політика конфіденційності</a>
+                <span class="footer-cb__copyright"><span>&copy; 2023</span> Щастя. All rights reserved.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul class="list-reset footer-nav__menu footer-nav__services">
+            <li class="menu-item menu-item-has-children">
+              <a href="page-services.html">Послуги</a>
+              <ul>
+                <li><a href="page-electroepilation.html">Електроепіляція</a></li>
+                <li class="current-menu-item"><a href="page-laserepilation.html">Лазерна епіляція</a></li>
+                <li><a href="page-photoepilation.html">Фотоепіляція</a></li>
+                <li><a href="page-waxepilation.html">Воскова депіляція</a></li>
+                <li><a href="page-sugaring.html">Шугаринг</a></li>
+                <li><a href="page-solar.html">Солярій</a></li>
+                <li><a href="page-cosmetology.html">Косметологія</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="list-reset footer-nav__menu footer-nav__pages">
+            <li><a href="page-main.html#main-about">Інформація</a></li>
+            <li><a href="page-price.html">Ціни</a></li>
+            <li><a href="page-main.html#main-promotions">Акції</a></li>
+            <li><a href="page-main.html#main-contacts">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <ul class="list-reset footer-contacts__info-list">
+            <li class="footer-contacts__info-item">
+              <span class="footer-contacts__item-title">Режим работи:</span>
+              <b><span>Пн-Сб 09:00 - 20:00</span></b>
+            </li>
+            <li class="footer-contacts__info-item">
+              <span class="footer-contacts__item-title">Електронна почта:</span>
+              <b><a href="mailto:info@epil-city.com.ua">info@epil-city.com.ua</a></b>
+            </li>
+            <li class="footer-contacts__info-item">
+              <a class="footer-contacts__icon-link" href="#">Наш Instagram
+                <svg width="23" height="23" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-instagram-light"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-contacts__info-item">
+              <a class="footer-contacts__icon-link" href="#">Слідкуйте за нами у TikTok
+                <svg width="23" height="23" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-tiktok-light"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-contacts__cb">
+            <div class="footer-cb">
+              <div class="footer-cb__btn-wrapper">
+                <button class="btn-reset btn btn--light footer-cb__btn-contacts" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+              </div>
+              <div class="footer-cb__rules">
+                <a class="footer-cb__policy" href="#">Політика конфіденційності</a>
+                <span class="footer-cb__copyright"><span>&copy; 2023</span> Щастя. All rights reserved.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="14" height="8" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#icon-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--message">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Ваша заявка відправлена</h2>
+            <p class="indent-reset modal__descr">Дякуємо, що обираєте нас! Зовсім скоро ми Вам зателефонуємо</p>
+            <picture>
+              <img class="modal__logo-icon" src="img/logo.svg" width="217" height="76" alt="Логотип">
+            </picture>
+            <button class="btn-reset btn btn--grad modal__submit modal__submit--limit" type="button" data-hystclose>Чудово!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="send-error-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--message">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Помилка надсилання!</h2>
+            <p class="indent-reset modal__descr">При надсиланні запиту виникла непередбачена помилка, відправка не вдалася. Спробуйте надіслати запит пізніше</p>
+            <button class="btn-reset btn btn--grad modal__submit modal__submit--limit" type="button" data-hystclose="">Закрити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="change-city-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--city">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Оберіть ваше місто</h2>
+            <p class="indent-reset modal__descr">Наші салони існують у наступних містах:</p>
+            <ul class="list-reset modal__city-list">
+              <li class="modal__city-item modal__city-item--current"><span>м. Київ</span></li>
+              <li class="modal__city-item"><a href="#">м. Миколаїв</a></li>
+              <li class="modal__city-item"><a href="#">м. Херсон</a></li>
+            </ul>
+            <button class="btn-reset modal__btn-check" type="button">Більше не показувати</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="free-consult-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Безкоштовна консультація</h2>
+            <p class="indent-reset modal__descr">Обіцяємо зберігати Ваш номер в таємниці</p>
+            <form class="form modal__form modal-grid" id="free-consult-form" data-validate>
+              <input type="hidden" name="Форма" value="Безкоштовна консультація">
+              <div class="modal-grid__name">
+                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+              </div>
+              <div class="modal-grid__select modal__select cb-form-select" data-dd="select">
+                <div class="cb-form-select__wrapper">
+                  <button class="btn-reset cb-form-select__trigger" type="button" data-dd="trigger">Коли зателефонувати?</button>
+                  <ul class="list-reset cb-form-select__list">
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="consult-modal-time-01" value="9:00 - 12:00" checked>
+                      <label class="cb-form-select__item-btn" for="consult-modal-time-01" data-dd="item">9:00 - 12:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="consult-modal-time-02" value="12:00 - 15:00">
+                      <label class="cb-form-select__item-btn" for="consult-modal-time-02" data-dd="item">12:00 - 15:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="consult-modal-time-03" value="15:00 - 18:00">
+                      <label class="cb-form-select__item-btn" for="consult-modal-time-03" data-dd="item">15:00 - 18:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="consult-modal-time-04" value="18:00 - 20:00">
+                      <label class="cb-form-select__item-btn" for="consult-modal-time-04" data-dd="item">18:00 - 20:00</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-grid__phone">
+                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
+              </div>
+              <div class="modal-grid__textarea">
+                <textarea class="form__input form__textarea" name="Ваші питання" placeholder="Ваші питання"></textarea>
+              </div>
+              <div class="modal-grid__submit">
+                <button class="btn-reset btn btn--grad modal__submit" type="submit">Відправити</button>
+              </div>
+              <div class="modal-grid__policy">
+                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних даних</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="proc-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Запис на процедуру</h2>
+            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
+            <form class="form modal__form modal-grid" id="proc-form" data-validate>
+              <input type="hidden" name="Яка процедура" value="Procedure name">
+              <div class="modal-grid__name">
+                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+              </div>
+              <div class="modal-grid__phone">
+                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
+              </div>
+              <div class="modal-grid__textarea">
+                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
+              </div>
+              <div>
+                <button class="btn-reset btn btn--grad modal__submit" type="submit">Відправити</button>
+              </div>
+              <div class="modal-grid__policy">
+                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
+                    даних</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="promotion-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Залиште свої контактні дані</h2>
+            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
+            <form class="form modal__form modal-grid" id="promotion-form" data-validate>
+              <input type="hidden" name="Яка акція" data-promo="input" value="">
+              <div class="modal__name">
+                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+              </div>
+              <div class="modal-grid__select modal__select cb-form-select" data-dd="select">
+                <div class="cb-form-select__wrapper">
+                  <button class="btn-reset cb-form-select__trigger" type="button" data-dd="trigger">Коли зателефонувати?</button>
+                  <ul class="list-reset cb-form-select__list">
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="promo-modal-time-01" value="9:00 - 12:00" checked>
+                      <label class="cb-form-select__item-btn" for="promo-modal-time-01" data-dd="item">9:00 - 12:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="promo-modal-time-02" value="12:00 - 15:00">
+                      <label class="cb-form-select__item-btn" for="promo-modal-time-02" data-dd="item">12:00 - 15:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="promo-modal-time-03" value="15:00 - 18:00">
+                      <label class="cb-form-select__item-btn" for="promo-modal-time-03" data-dd="item">15:00 - 18:00</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Коли зателефонувати?" id="promo-modal-time-04" value="18:00 - 20:00">
+                      <label class="cb-form-select__item-btn" for="promo-modal-time-04" data-dd="item">18:00 - 20:00</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-grid__phone">
+                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
+              </div>
+              <div class="modal-grid__textarea">
+                <textarea class="form__input form__textarea" name="Ваші питання" placeholder="Ваші питання"></textarea>
+              </div>
+              <div class="modal-grid__submit">
+                <button class="btn-reset btn btn--grad modal__submit" type="submit">Відправити</button>
+              </div>
+              <div class="modal-grid__policy">
+                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних даних</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="record-to-proc-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Запис на процедуру</h2>
+            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
+            <form class="form modal__form modal-grid" id="record-to-proc-form" data-validate>
+              <input type="hidden" name="Форма" value="Запис на процедуру">
+              <div class="modal-grid__name">
+                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+              </div>
+              <div class="modal-grid__select modal__select cb-form-select" data-dd="select">
+                <div class="cb-form-select__wrapper">
+                  <button class="btn-reset cb-form-select__trigger" type="button" data-dd="trigger">Процедура</button>
+                  <ul class="list-reset cb-form-select__list">
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-01" value="Електроепіляція" checked>
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-01" data-dd="item">Електроепіляція</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-02" value="Лазерна епіляція">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-02" data-dd="item">Лазерна епіляція</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-03" value="Фотоепіляція">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-03" data-dd="item">Фотоепіляція</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-04" value="Воскова депіляція">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-04" data-dd="item">Воскова депіляція</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-05" value="Шугаринг">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-05" data-dd="item">Шугаринг</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-06" value="Солярій">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-06" data-dd="item">Солярій</label>
+                    </li>
+                    <li class="cb-form-select__item">
+                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-07" value="Косметологія">
+                      <label class="cb-form-select__item-btn" for="procedure-modal-item-07" data-dd="item">Косметологія</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-grid__phone">
+                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
+              </div>
+              <div class="modal-grid__textarea">
+                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
+              </div>
+              <div class="modal-grid__submit">
+                <button class="btn-reset btn btn--grad modal__submit" type="submit">Відправити</button>
+              </div>
+              <div class="modal-grid__policy">
+                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
+                    даних</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="record-to-spec-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Запис до фахівця <span data-spec="title"></span></h2>
+            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
+            <form class="form modal__form modal-grid" id="record-to-spec-form" data-validate>
+              <input type="hidden" data-spec="input" name="Запис до фахівця" value="">
+              <div class="modal-grid__name">
+                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
+              </div>
+              <div class="modal-grid__phone">
+                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
+              </div>
+              <div class="modal-grid__textarea">
+                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
+              </div>
+              <div>
+                <button class="btn-reset btn btn--grad modal__submit" type="submit">Відправити</button>
+              </div>
+              <div class="modal-grid__policy">
+                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
+                    даних</a></p>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="safe-cycle-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--info">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title modal__title--info">Етапи обробки інструментів в салонах епіляції «Щастя» </h2>
+            <div class="safe-cycle">
+              <ol class="list-reset safe-cycle__list">
+                <li class="safe-cycle__item">
+                  <p>Кладемо інструмент в контейнер з розчином для дезінфекції на 20 хвилин (відразу фіксуємо в журналі дезінфекції кількість інструментів, час експозиції).</p>
+                </li>
+                <li class="safe-cycle__item">
+                  <p>Промиваємо під проточною водою (під краном) протягом 5 хвилин з використанням щітки.</p>
+                </li>
+                <li class="safe-cycle__item">
+                  <p>Викладаємо інструмент у відкритому вигляді на одноразову серветку в сушильний ящик до повного висихання інструменту.</p>
+                </li>
+                <li class="safe-cycle__item">
+                  <p>Розкладаємо інструмент в крафт-пакети із зазначенням дати обробки і запаковуємо їх. Розкладаємо таким чином, щоб кожен крафт-пакет лежав окремо, не перекриваючи один одного.</p>
+                </li>
+                <li class="safe-cycle__item safe-cycle__item--wide">
+                  <p>Кладемо крафт-пакети в сухожарову шафу на 60 хвилин при температурі 180 градусів і одразу фіксуємо в журналі стерилізації. Включає сухожарову шафу адміністратор.</p>
+                </li>
+              </ol>
+              <p class="indent-reset safe-cycle__note">Зберігання стерильного інструменту можливе тільки терміном до 14 днів в герметичних крафт-пакетах після повного циклу обробки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal hystmodal--simple" id="certificate-id" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
+          <div class="modal modal--gallery">
+            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
+              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <h2 class="indent-reset title title--h3 modal__title">Дипломи і сертифікати</h2>
+            <div class="certificates slider">
+              <div class="certificates__view slider__container">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide certificates__slide">
+                    <a href="img/certificates/cert1.jpg" data-fslightbox="certificate-id">
+                      <img class="swiper-lazy" src="img/certificates/cert1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificates__slide">
+                    <a href="img/certificates/cert2.jpg" data-fslightbox="certificate-id">
+                      <img class="swiper-lazy" src="img/certificates/cert2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificates__slide">
+                    <a href="img/certificates/cert1.jpg" data-fslightbox="certificate-id">
+                      <img class="swiper-lazy" src="img/certificates/cert1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="swiper-slide certificates__slide">
+                    <a href="img/certificates/cert2.jpg" data-fslightbox="certificate-id">
+                      <img class="swiper-lazy" src="img/certificates/cert2.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="certificates__preview slider__container" thumbsSlider>
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide certificates__thumb">
+                    <img class="swiper-lazy" src="img/certificates/cert1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide certificates__thumb">
+                    <img class="swiper-lazy" src="img/certificates/cert2.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide certificates__thumb">
+                    <img class="swiper-lazy" src="img/certificates/cert1.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide certificates__thumb">
+                    <img class="swiper-lazy" src="img/certificates/cert2.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
