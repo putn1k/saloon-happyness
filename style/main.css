@@ -9,6 +9,7 @@
   --gradient-pink: linear-gradient(313.11deg, #d31db4 6.56%, #df7ace 78.86%);
   --gray: #dddddd;
   --green: #669f5d;
+  --green-10: #f5faf4;
   --green-hov: #518149;
   --light-gray: #f5f5f5;
   --light-green: #bbe7b4;
@@ -1061,7 +1062,7 @@ a {
   padding: 30px;
   overflow: hidden;
 
-  background-color: var(--light-pink);
+  background-color: var(--green-10);
   background-image: url("../img/action/action-happy.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -2536,6 +2537,9 @@ a {
 .footer-nav__menu > li > a {
   color: inherit;
 }
+.footer-nav .current-menu-item a {
+  text-decoration-color: inherit;
+}
 .footer-nav .menu-item-has-children .current-menu-item a {
   color: var(--white);
 }
@@ -2872,7 +2876,7 @@ a {
   padding: 30px;
 
   background-color: var(--white);
-  background-image: url("../img/about/about-offer.png"), linear-gradient(to top, #fff6fd 30%, #ffffff 100%);
+  background-image: url("../img/about/about-offer.png"), linear-gradient(142deg, #eaf6e8 0%, #ffffff 100%);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: auto 310px;

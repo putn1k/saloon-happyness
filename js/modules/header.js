@@ -25,9 +25,20 @@ function closeMobileMenu() {
   headerModalNode.setAttribute( 'aria-hidden', 'true' );
 }
 
+const closeMenuAfterClick = ( selectorNodes ) => {
+  document.querySelectorAll( selectorNodes ).forEach( item => {
+    item.addEventListener( 'click', () => {
+      if ( window.matchMedia( '(max-width: 992px)' ).matches ) {
+        siteBurger.close();
+      }
+    } );
+  } );
+};
+
 const initHeaderMenu = () => {
   if ( !headerModalNode || !headerNode ) return;
   headerModalNode.id = MENU_ID;
+  closeMenuAfterClick( '.header-modal .menu-item a' );
   document.addEventListener( 'keydown', ( evt ) => {
     if ( isEscKey( evt ) && headerModalNode.getAttribute( 'aria-hidden' ) === 'false' ) {
       siteBurger.close();
