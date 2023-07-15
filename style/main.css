@@ -2857,13 +2857,8 @@ a {
 .main-offer__descr {
   margin-bottom: 36px;
 }
-.main-offer__link {
-  display: block;
-  max-width: 300px;
-  margin: 0 auto;
-  margin-bottom: 300px;
-
-  text-align: center;
+.main-offer__wrapper {
+  padding-bottom: 300px;
 }
 @media (min-width: 992px) {
   .main-offer {
@@ -2874,8 +2869,10 @@ a {
   .main-offer__wrapper {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 50%;
     margin-left: auto;
+    padding-bottom: 0;
     padding-left: 15px;
   }
   .main-offer__title {
@@ -2888,8 +2885,6 @@ a {
   }
   .main-offer__link {
     order: 3;
-    margin-bottom: 0;
-    margin-left: 0;
   }
 }
 @media (min-width: 1200px) {
