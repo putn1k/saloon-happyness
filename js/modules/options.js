@@ -73,6 +73,21 @@ export const Options = {
         },
       },
     },
+    MainGallery: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      watchSlidesProgress: true,
+      lazy: true,
+      breakpoints: {
+        1440: {
+          slidesPerView: 2,
+        },
+      },
+      navigation: {
+        prevEl: '.saloon-gallery__nav [data-to-slide="prev"]',
+        nextEl: '.saloon-gallery__nav [data-to-slide="next"]',
+      },
+    },
     MainAwards: {
       slidesPerView: 1,
       spaceBetween: 30,
@@ -80,8 +95,8 @@ export const Options = {
       lazy: true,
       loop: false,
       navigation: {
-        nextEl: '.main-awards__nav [data-to-slide="prev"]',
-        prevEl: '.main-awards__nav [data-to-slide="next"]',
+        prevEl: '.main-awards__nav [data-to-slide="prev"]',
+        nextEl: '.main-awards__nav [data-to-slide="next"]',
       },
     },
   },

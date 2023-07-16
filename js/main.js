@@ -70,6 +70,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initDropdownSelect();
     initSlider( '.main-promotions__slider-container', Options.Swiper.MainActions );
     initSlider( '.main-awards__slider-container', Options.Swiper.MainAwards );
+    initSlider( '.saloon-gallery__slider', Options.Swiper.MainGallery );
     initSliders( '.saloon-team__slider', Options.Swiper.Team );
     initTabs( 'team' );
     initTabs( 'contacts' );
