@@ -1921,15 +1921,12 @@ a {
   width: 40px;
   height: 40px;
 
-  fill: var(--accent-btn);
-  fill-opacity: 0.8;
+  fill: var(--white);
 }
 @media (min-width: 992px) {
   .yt-video:hover .yt-video__button-icon {
     -webkit-transform: scale(0.95);
             transform: scale(0.95);
-
-    fill-opacity: 1;
   }
   .yt-video__link img {
     transition: -webkit-transform 0.25s ease-in-out;
@@ -1944,9 +1941,9 @@ a {
     width: 60px;
     height: 60px;
 
-    transition: fill-opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-    transition: fill-opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
-    transition: fill-opacity 0.25s ease-in-out, transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition:         transform 0.25s ease-in-out;
+    transition:         transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
   }
 }
 
