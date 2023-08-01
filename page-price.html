@@ -58,7 +58,7 @@
               </ul>
             </nav>
             <div class="header-geo">
-              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-city-modal">Київ</button>
+              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-saloon-modal">Київ</button>
             </div>
             <div class="header-contacts">
               <div class="header-contacts__phone">
@@ -69,7 +69,7 @@
                   <span>+380 98 097 03 45</span>
                 </a>
               </div>
-              <button class="btn-reset btn header-contacts__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатися на процедуру</button>
+              <a class="btn header-contacts__btn" href="page-main.html#bookly-online-form">Записатися на процедуру</a>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@
               </ul>
             </nav>
             <div class="header-geo">
-              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-city-modal">Київ</button>
+              <button class="btn-reset header-geo__trigger" type="button" aria-label="Ваше місто Київ" data-hystmodal="#change-saloon-modal">Київ</button>
             </div>
             <div class="header-contacts">
               <div class="header-contacts__phone">
@@ -108,7 +108,7 @@
                   <span>+380 98 097 03 45</span>
                 </a>
               </div>
-              <button class="btn-reset btn header-contacts__btn" type="button" data-hystmodal="#record-to-proc-modal">Записатися на процедуру</button>
+              <a class="btn header-contacts__btn" href="page-main.html#bookly-online-form">Записатися на процедуру</a>
             </div>
           </div>
         </div>
@@ -124,485 +124,216 @@
         <section class="price">
           <div class="container">
             <h1 class="indent-reset title price__title">Ціни на послуги</h1>
-            <div class="price__slider slider">
-              <ul class="is-hidden" id="salonList">
-                <li>м. Київ, вул. Б. Хмельницкого</li>
-                <li>м. Київ, вул. Чавдар</li>
+            <div class="price__tabs" data-tabs="price">
+              <h2 class="indent-reset title title--h3 price__tabs-title">Виберіть послугу</h2>
+              <ul class="list-reset price__tabs-handlers" data-tabs="nav">
+                <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Електроепіляція</button>
+                </li>
+                <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Лазерна епіляція</button>
+                </li>
+                <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Фотоепіляція</button></li>
               </ul>
-              <div class="price__slider-pagination"></div>
-              <div class="price__slider-container slider__container">
-                <div class="swiper-wrapper slider__wrapper">
-                  <div class="swiper-slide">
-                    <div class="price__tabs" data-tabs="price">
-                      <h2 class="indent-reset title title--h3 price__tabs-title">Виберіть послугу</h2>
-                      <ul class="list-reset price__tabs-handlers" data-tabs="nav">
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Електроепіляція</button>
-                        </li>
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Лазерна епіляція</button>
-                        </li>
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Фотоепіляція</button></li>
-                      </ul>
-                      <div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+              <div>
+                <div class="price__tabs-content price-content" data-tabs="panel">
+                  <div class="price-content__header">
+                    <div></div>
+                    <div class="price-content__gender">
+                      <div>Жінки</div>
+                      <div>Чоловіки</div>
                     </div>
                   </div>
-                  <div class="swiper-slide">
-                    <div class="price__tabs" data-tabs="price">
-                      <h2 class="indent-reset title title--h3 price__tabs-title">Виберіть послугу</h2>
-                      <ul class="list-reset price__tabs-handlers" data-tabs="nav">
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Електроепіляція</button>
-                        </li>
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Лазерна епіляція</button>
-                        </li>
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Фотоепіляція</button></li>
-                        <li><button class="btn-reset price__tabs-btn" type="button" data-tabs="btn">Воскова депіляція</button>
-                        </li>
-                      </ul>
-                      <div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="price__tabs-content price-content" data-tabs="panel">
-                          <div class="price-content__header">
-                            <div></div>
-                            <div class="price-content__gender">
-                              <div>Жінки</div>
-                              <div>Чоловіки</div>
-                            </div>
-                          </div>
-                          <ul class="list-reset price-content__list">
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem, ipsum dolor.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">12</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
-                                    індивідуально</span></span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums price-content__sums--overall">
-                                <span class="price-content__sum">1200</span>
-                              </div>
-                            </li>
-                            <li class="price-content__item">
-                              <span>послуги Lorem ipsum dolor sit amet.</span>
-                              <div class="price-content__sums">
-                                <span class="price-content__sum">1200</span>
-                                <span class="price-content__sum">10</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                  <ul class="list-reset price-content__list">
+                    <li class="price-content__item">
+                      <span>послуги Lorem, ipsum dolor.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
                       </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">12</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
+                            індивідуально</span></span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums price-content__sums--overall">
+                        <span class="price-content__sum">1200</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem, ipsum dolor.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">12</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
+                            індивідуально</span></span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums price-content__sums--overall">
+                        <span class="price-content__sum">1200</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price__tabs-content price-content" data-tabs="panel">
+                  <div class="price-content__header">
+                    <div></div>
+                    <div class="price-content__gender">
+                      <div>Жінки</div>
+                      <div>Чоловіки</div>
                     </div>
                   </div>
+                  <ul class="list-reset price-content__list">
+                    <li class="price-content__item">
+                      <span>послуги Lorem, ipsum dolor.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">12</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
+                            індивідуально</span></span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums price-content__sums--overall">
+                        <span class="price-content__sum">1200</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="price__tabs-content price-content" data-tabs="panel">
+                  <div class="price-content__header">
+                    <div></div>
+                    <div class="price-content__gender">
+                      <div>Жінки</div>
+                      <div>Чоловіки</div>
+                    </div>
+                  </div>
+                  <ul class="list-reset price-content__list">
+                    <li class="price-content__item">
+                      <span>послуги Lorem, ipsum dolor.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">12</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem, ipsum dolor.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">12</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
+                            індивідуально</span></span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums price-content__sums--overall">
+                        <span class="price-content__sum">1200</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum price-content__sum--uniq"><span>Обговорюється
+                            індивідуально</span></span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums price-content__sums--overall">
+                        <span class="price-content__sum">1200</span>
+                      </div>
+                    </li>
+                    <li class="price-content__item">
+                      <span>послуги Lorem ipsum dolor sit amet.</span>
+                      <div class="price-content__sums">
+                        <span class="price-content__sum">1200</span>
+                        <span class="price-content__sum">10</span>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -731,7 +462,7 @@
           <div class="footer-top__cb">
             <div class="footer-cb">
               <div class="footer-cb__btn-wrapper">
-                <button class="btn-reset btn btn--light footer-cb__btn-contacts" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+                <a class="btn btn--light footer-cb__btn-contacts" href="page-main.html#bookly-online-form">Записатись на процедуру</a>
               </div>
               <div class="footer-cb__rules">
                 <a class="footer-cb__policy" href="#">Політика конфіденційності</a>
@@ -790,7 +521,7 @@
           <div class="footer-contacts__cb">
             <div class="footer-cb">
               <div class="footer-cb__btn-wrapper">
-                <button class="btn-reset btn btn--light footer-cb__btn-contacts" data-hystmodal="#record-to-proc-modal">Записатись на процедуру</button>
+                <a class="btn btn--light footer-cb__btn-contacts" href="page-main.html#bookly-online-form">Записатись на процедуру</a>
               </div>
               <div class="footer-cb__rules">
                 <a class="footer-cb__policy" href="#">Політика конфіденційності</a>
@@ -802,7 +533,7 @@
       </div>
     </footer>
     <div class="scroll-top" id="scroll-top">
-      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+      <a class="scroll-top__link" href="#site-top" aria-label="На початок сторінки">
         <svg width="14" height="8" aria-hidden="true">
           <use xlink:href="img/sprite.svg#icon-up"></use>
         </svg>
@@ -843,7 +574,7 @@
         </div>
       </div>
     </div>
-    <div class="hystmodal hystmodal--simple" id="change-city-modal" aria-hidden="true">
+    <div class="hystmodal hystmodal--simple" id="change-saloon-modal" aria-hidden="true">
       <div class="hystmodal__wrap">
         <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
           <div class="modal modal--city">
@@ -852,10 +583,11 @@
                 <use xlink:href="img/sprite.svg#icon-cross"></use>
               </svg>
             </button>
-            <h2 class="indent-reset title title--h3 modal__title">Оберіть ваше місто</h2>
+            <h2 class="indent-reset title title--h3 modal__title">Оберіть салон</h2>
             <p class="indent-reset modal__descr">Наші салони існують у наступних містах:</p>
             <ul class="list-reset modal__city-list">
-              <li class="modal__city-item modal__city-item--current"><span>м. Київ</span></li>
+              <li class="modal__city-item modal__city-item--current"><span>м. Київ (Осокорки)</span></li>
+              <li class="modal__city-item"><a href="#">м. Київ (Золоті ворота)</a></li>
               <li class="modal__city-item"><a href="#">м. Миколаїв</a></li>
               <li class="modal__city-item"><a href="#">м. Одесса</a></li>
             </ul>
@@ -920,40 +652,6 @@
         </div>
       </div>
     </div>
-    <div class="hystmodal hystmodal--simple" id="proc-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
-          <div class="modal">
-            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
-              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-cross"></use>
-              </svg>
-            </button>
-            <h2 class="indent-reset title title--h3 modal__title">Запис на процедуру</h2>
-            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
-            <form class="form modal__form modal-grid" id="proc-form" data-validate>
-              <input type="hidden" name="Яка процедура" value="Procedure name">
-              <div class="modal-grid__name">
-                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
-              </div>
-              <div class="modal-grid__phone">
-                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
-              </div>
-              <div class="modal-grid__textarea">
-                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
-              </div>
-              <div>
-                <button class="btn-reset btn btn--accent modal__submit" type="submit">Відправити</button>
-              </div>
-              <div class="modal-grid__policy">
-                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
-                    даних</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="hystmodal hystmodal--simple" id="promotion-modal" aria-hidden="true">
       <div class="hystmodal__wrap">
         <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
@@ -1006,110 +704,6 @@
                 <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних даних</a></p>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal hystmodal--simple" id="record-to-proc-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
-          <div class="modal">
-            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
-              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-cross"></use>
-              </svg>
-            </button>
-            <h2 class="indent-reset title title--h3 modal__title">Запис на процедуру</h2>
-            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
-            <form class="form modal__form modal-grid" id="record-to-proc-form" data-validate>
-              <input type="hidden" name="Форма" value="Запис на процедуру">
-              <div class="modal-grid__name">
-                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
-              </div>
-              <div class="modal-grid__select modal__select cb-form-select" data-dd="select">
-                <div class="cb-form-select__wrapper">
-                  <button class="btn-reset cb-form-select__trigger" type="button" data-dd="trigger">Процедура</button>
-                  <ul class="list-reset cb-form-select__list">
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-01" value="Електроепіляція" checked>
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-01" data-dd="item">Електроепіляція</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-02" value="Лазерна епіляція">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-02" data-dd="item">Лазерна епіляція</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-03" value="Фотоепіляція">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-03" data-dd="item">Фотоепіляція</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-04" value="Воскова депіляція">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-04" data-dd="item">Воскова депіляція</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-05" value="Шугаринг">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-05" data-dd="item">Шугаринг</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-06" value="Солярій">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-06" data-dd="item">Солярій</label>
-                    </li>
-                    <li class="cb-form-select__item">
-                      <input class="visually-hidden cb-form-select__radio" type="radio" name="Процедура" id="procedure-modal-item-07" value="Косметологія">
-                      <label class="cb-form-select__item-btn" for="procedure-modal-item-07" data-dd="item">Косметологія</label>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="modal-grid__phone">
-                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
-              </div>
-              <div class="modal-grid__textarea">
-                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
-              </div>
-              <div class="modal-grid__submit">
-                <button class="btn-reset btn btn--accent modal__submit" type="submit">Відправити</button>
-              </div>
-              <div class="modal-grid__policy">
-                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
-                    даних</a></p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal hystmodal--simple" id="record-to-spec-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window hystmodal__window--form" role="dialog" aria-modal="true">
-          <div class="modal">
-            <button class="btn-reset modal__close" type="button" aria-label="Закрити" data-hystclose>
-              <svg class="modal__close-icon" width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-cross"></use>
-              </svg>
-            </button>
-            <h2 class="indent-reset title title--h3 modal__title">Запис до фахівця <span data-spec="title"></span></h2>
-            <p class="indent-reset modal__descr">Після отримання заявки ми Вам обов’язково зателефонуємо</p>
-            <form class="form modal__form modal-grid" id="record-to-spec-form" data-validate>
-              <input type="hidden" data-spec="input" name="Запис до фахівця" value="">
-              <div class="modal-grid__name">
-                <input class="form__input" type="text" name="Ім’я" placeholder="Ваше ім’я" data-validate="name" required>
-              </div>
-              <div class="modal-grid__phone">
-                <input class="form__input" type="tel" name="Номер телефону" placeholder="Номер телефону" data-validate="phone" required>
-              </div>
-              <div class="modal-grid__textarea">
-                <textarea class="form__input form__textarea" name="Додаткові побажання/запитання" placeholder="Додаткові побажання/запитання"></textarea>
-              </div>
-              <div>
-                <button class="btn-reset btn btn--accent modal__submit" type="submit">Відправити</button>
-              </div>
-              <div class="modal-grid__policy">
-                <p class="sm-text">Натискаючи відправити ви погоджуєтесь з <a href="#">політикою обробки персональних
-                    даних</a></p>
-              </div>
-            </form>
-
           </div>
         </div>
       </div>
@@ -1206,7 +800,7 @@
     </div>
   </div>
   <script src="js/vendor-bundle.js"></script>
-  <script src="js/main.js" type="module"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

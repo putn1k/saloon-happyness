@@ -225,7 +225,8 @@ body {
 
 input,
 textarea,
-button {
+button,
+select {
   -webkit-font-feature-settings: "lnum";
      -moz-font-feature-settings: "lnum";
           font-feature-settings: "lnum";
@@ -478,8 +479,6 @@ a {
   color: var(--white);
 
   background-color: var(--accent-btn);
-  background-position-x: -2px;
-  background-size: 150%;
   border-color: transparent;
 }
 .btn--light {
@@ -1073,29 +1072,48 @@ a {
   box-sizing: border-box;
   height: auto;
 }
-.person-card__meta {
-  position: relative;
-
+.person-card__photo-wrapper {
   width: 100%;
-  overflow: hidden;
+  padding: 30px 16px;
+  padding-bottom: 0;
 
   background-color: var(--light-gray);
   border-radius: 25px;
 }
 .person-card__photo {
+  position: relative;
+
   display: block;
-  height: 240px;
+  height: 0;
+  padding-top: 120%;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.person-card__photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 
   -o-object-fit: contain;
      object-fit: contain;
+  -o-object-position: center bottom;
+     object-position: center bottom;
 }
 .person-card__post {
   position: absolute;
   bottom: 10px;
-  left: 10px;
+  left: 0;
 
-  padding: 10px 14px;
+  padding: 10px 24px;
 
   background-color: var(--white);
   border-radius: 99em;
@@ -1115,41 +1133,12 @@ a {
 
   text-decoration-color: transparent;
 }
-.person-card__appoint-action {
-  font-weight: 600;
-  color: var(--accent);
-
-  cursor: pointer;
-}
-@media (min-width: 768px) {
-  .person-card__photo {
-    height: 280px;
-  }
-}
 @media (min-width: 992px) {
   .person-card__cert-action {
     transition: text-decoration-color 0.25s ease-in-out;
   }
   .person-card__cert-action:hover {
     text-decoration-color: inherit;
-  }
-  .person-card__photo {
-    height: 300px;
-  }
-  .person-card__appoint-action {
-    text-decoration: underline;
-
-    transition: text-decoration-color 0.15s ease-in-out;
-
-    text-decoration-color: transparent;
-  }
-  .person-card__appoint-action:hover {
-    text-decoration-color: inherit;
-  }
-}
-@media (min-width: 1200px) {
-  .person-card__photo {
-    height: 330px;
   }
 }
 
@@ -1431,7 +1420,7 @@ a {
 @media (min-width: 992px) {
   .saloon-team__nav {
     position: absolute;
-    top: 150px;
+    top: 180px;
     z-index: 2;
 
     display: flex;
@@ -1446,6 +1435,11 @@ a {
 @media (min-width: 1200px) {
   .saloon-team__nav {
     top: 165px;
+  }
+}
+@media (min-width: 1440px) {
+  .saloon-team__nav {
+    top: 185px;
   }
 }
 
@@ -1648,6 +1642,9 @@ a {
           transform: translateY(-50%);
 
   fill: currentColor;
+}
+.contacts-card__btn {
+  padding: 22px 16px;
 }
 @media (min-width: 992px) {
   .contacts-card__phones li a {
@@ -2476,7 +2473,7 @@ a {
     margin-bottom: 0;
   }
   .footer-cb__btn-contacts {
-    padding: 22px 26px;
+    padding: 22px 16px;
   }
   .footer-cb__policy {
     transition: color 0.15s ease-in-out;
@@ -2724,8 +2721,11 @@ a {
   }
 }
 
+.main-bookly {
+  padding-top: 80px;
+}
 .main-services {
-  padding: 80px 0 0;
+  padding-top: 60px;
 }
 .main-services--inner {
   padding: 24px 0 60px;
@@ -2751,7 +2751,7 @@ a {
 }
 @media (min-width: 992px) {
   .main-services {
-    padding: 90px 0 0;
+    padding-top: 80px;
   }
   .main-services--inner {
     padding: 24px 0 80px;
@@ -2781,7 +2781,7 @@ a {
 }
 @media (min-width: 1440px) {
   .main-services {
-    padding: 56px 0 80px;
+    padding-bottom: 80px;
   }
   .main-services--inner {
     padding: 24px 0 120px;
@@ -2940,7 +2940,7 @@ a {
 }
 
 .main-promotions {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 .main-promotions__title {
   margin-bottom: 16px;
@@ -2953,7 +2953,7 @@ a {
 }
 @media (min-width: 992px) {
   .main-promotions {
-    padding: 90px 0;
+    padding: 80px 0;
   }
   .main-promotions__title {
     margin-bottom: 36px;
@@ -2972,7 +2972,7 @@ a {
 }
 @media (min-width: 1440px) {
   .main-promotions {
-    padding: 100px 0;
+    padding: 90px 0;
   }
   .main-promotions__title {
     margin-bottom: 42px;
@@ -3392,8 +3392,12 @@ a {
   }
 }
 
+.price {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .price__title {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 .price__slider-pagination {
   display: flex;
@@ -3479,6 +3483,12 @@ a {
   }
 }
 @media (min-width: 992px) {
+  .price {
+    padding-top: 60px;
+  }
+  .price__title {
+    margin-bottom: 40px;
+  }
   .price__tabs-title {
     position: absolute;
 
@@ -3510,6 +3520,8 @@ a {
 
     color: var(--medium-gray);
 
+    border-radius: 25px 25px 0 0;
+
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   }
   .price__tabs-btn::before {
@@ -3519,7 +3531,6 @@ a {
     color: var(--black);
 
     background-color: var(--light-gray);
-    border-radius: 25px 25px 0 0;
   }
 }
 
@@ -4825,7 +4836,7 @@ a {
 }
 
 .cosmetology-color-block {
-  padding: 40px;
+  padding: 20px;
 
   background-color: var(--accent-light);
   border-radius: 25px;
@@ -4861,6 +4872,27 @@ a {
 
   border-radius: 25px;
 }
+.cosmetology-color-block__cover {
+  position: relative;
+
+  height: 0;
+  margin-bottom: 20px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+
+  border-radius: 25px;
+}
+.cosmetology-color-block__cover > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .cosmetology-color-block__btns {
   display: grid;
   margin-bottom: 24px;
@@ -4869,13 +4901,16 @@ a {
 
   gap: 12px;
 }
-.cosmetology-color-block__btns > button {
-  padding: 22px;
+.cosmetology-color-block__btns > a {
+  padding: 22px 12px;
 }
 .cosmetology-color-block__note span {
   color: var(--accent);
 }
 @media (min-width: 768px) {
+  .cosmetology-color-block {
+    padding: 32px;
+  }
   .cosmetology-color-block__btns {
     grid-template-columns: 1fr 1fr;
   }
@@ -4884,7 +4919,7 @@ a {
   .cosmetology-color-block {
     display: grid;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
 
             column-gap: 30px;
 
@@ -4921,7 +4956,7 @@ a {
   .cosmetology-color-block__btns {
     grid-template-columns: 1fr 1fr;
   }
-  .cosmetology-color-block__btns button {
+  .cosmetology-color-block__btns a {
     padding: 22px 12px;
   }
 }
